@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
 main {
     margin-top: 50vh;
     /* poussé de la moitié de hauteur de viewport */
     transform: translateY(-50%);
+    font-family: 'Hanken Grotesk', sans-serif;
 }
 
 .result {
@@ -24,7 +27,7 @@ section {
     height: 500px;
     width: 380px;
     text-align: center;
-    background-color: #6743ff;
+    background: linear-gradient(rgb(120, 87, 255), rgb(46, 43, 233));
     color: white;
     border-radius: 10%;
 }
@@ -42,21 +45,40 @@ section {
 }
 
 .average-result {
-    background-color: #4b23ca;
-    height: 100px;
-    width: 100px;
+    background: linear-gradient(rgb(78, 33, 202), rgba(36, 33, 202, 0));
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     margin: auto;
-    padding: 20px;
+    padding-top: 40px;
+    height: 160px;
 }
 
 .final-result-title {
     margin: auto;
+    opacity: 0.75;
+}
+
+.average-value1{
+    font-size: 75px;
+    font-weight: 800;
+    padding: 0;
+    margin: 0;
+}
+
+.average-value2{
+    padding: 0;
+    margin: 0;
+    margin-top: -10px;
+    opacity: 0.5;
 }
 
 .final-result-text {
     margin: auto;
+    margin-top: -20px;
     padding: 20px;
+    max-width: 60%;
+    max-height: 45%;
 }
 
 .summary-details {
@@ -82,18 +104,83 @@ section {
     text-align: center;
     width: 100%;
     margin: auto;
+    margin-bottom: -25px;
 }
 
 #reaction,
 #memory,
 #verbal,
 #visual {
-    text-align: left;
+    float: left;
 }
 
 #reaction-result,
 #memory-result,
 #verbal-result,
 #visual-result {
-    text-align: right;
+    float: right;
+}
+
+.reaction-style, .memory-style, .verbal-style, .visual-style{
+    width: 65%;
+    border-radius: 5%;
+    margin: auto;
+    padding: 10px;
+}
+
+.reaction-style{
+    background-color: #ffe5e5;
+}
+
+.memory-style{
+    background-color: #fffbf2;
+}
+
+.verbal-style{
+    background-color: #f2fafa;
+}
+
+.visual-style{
+    background-color: #f3f3fd;
+}
+
+#reaction{
+    color: red;
+}
+
+#memory{
+    color: yellow;
+}
+
+#verbal{
+    color: green;
+}
+
+#visual{
+    color: blue;
+}
+
+.btn{
+    width: 100%;
+    margin: auto;
+}
+
+button{
+    width: 65%;
+    border-radius: 10%;
+    padding: 10px;
+    background-color: #303b59;
+    color: white;
+}
+
+.great, .summary{
+    font-weight: 700;
+}
+
+.great{
+    font-size: 30px;
+}
+
+.great-text{
+    opacity: 0.5;
 }
